@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0;
+  font-family: 'Special Elite', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+}
+
+h1 {
+  font-family: 'Ultra', serif;
+  color: #391191;
+  margin: 0.2em 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h1 span {
+  font-family: 'Special Elite', cursive; /* For any text inside span, use 'Special Elite' */
+}
+
+.highlight {
+  color: #391191;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #391191;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2e0e73;
+}
