@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stillness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc;
+      font-family: 'Dancing Script', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      width: 100%;
+      margin: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      background-color: #fffaf0;
+    }
+
+    .image-side {
+      flex: 1;
+    }
+
+    .image-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .poem-side {
+      flex: 1;
+      padding: 2rem;
+      color: maroon;
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+
+    .nav-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: maroon;
+      color: white;
+      border: none;
+      border-radius: 14px;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      font-family: 'Dancing Script', cursive;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .nav-button:hover {
+      background-color: #4b1c1c;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .image-side, .poem-side {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="moment.html" class="nav-button">⏪ Back</a>
+
+  <div class="container">
+    <div class="image-side">
+      <img src="images/stillness.jpg" alt="Quiet Moment Image" />
+    </div>
+    <div class="poem-side">
+      you waited,<br>
+      at the metro gate,<br>
+      while the day still clung to my shoulders.<br>
+      my office hours dragged,<br>
+      but you —<br>
+      you showed up like the part of the day I’d been waiting for.<br><br>
+
+      we talked —<br>
+      well, I talked,<br>
+      about deadlines and dumb people<br>
+      and why I hate my chair at work.<br>
+      and you just listened.<br>
+      not out of obligation —<br>
+      but like you actually cared.<br>
+      like you liked the way i existed.<br><br>
+
+      and then the auto —<br>
+      how it hummed like a lullaby<br>
+      while I melted<br>
+      into your lap<br>
+      like sleep had found its favorite place.<br>
+      you held me<br>
+      like something fragile,<br>
+      kissed my forehead<br><br>
+
+      not bold, not dramatic —<br>
+      just a tiny, quiet thing.<br>
+      like a thought you couldn't hold in.<br><br>
+
+      no confessions,<br>
+      no perfect lines.<br>
+      just the sound of the city,<br>
+      your hand in mine,<br>
+      and the start of something<br>
+      we didn’t have words for yet.
+    </div>
+  </div>
+
+</body>
+</html>
