@@ -33,6 +33,18 @@
       font-size: 1.1rem;
     }
 
+    .image-container {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 2rem;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
     .button {
       display: inline-block;
       margin-top: 2rem;
@@ -51,6 +63,23 @@
       background-color: #3b2f2f;
     }
 
+    .nav-button {
+      background-color: maroon;
+      color: white;
+      border: none;
+      border-radius: 14px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.85rem;
+      font-family: 'Special Elite', cursive;
+      cursor: pointer;
+      margin: 0.5rem;
+      transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: #4b1c1c;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
@@ -59,7 +88,11 @@
 </head>
 <body>
   <h1>Welcome to KaKa’s Nirvana</h1>
-  <h2>population: 2 fools in love</h2>
+  <h2>population: 2 kids in love</h2>
+
+  <div class="image-container">
+    <img src="images/YOUR_IMAGE.jpg" alt="Descriptive Alt Text" />
+  </div>
 
   <p><strong>K,</strong></p>
 
@@ -79,7 +112,11 @@
   Your babygirl,<br>
   (CEO of chaotic cuddles & emotional monologues)</p>
 
-  <a href="then.html" class="button">✨ Enter Nirvana ✨</a>
+  <div class="button-container">
+    <a href="then.html" class="button">✨ Enter Nirvana ✨</a>
+    <a href="previouspage.html"><button class="nav-button">⏪ Back</button></a>
+    <a href="nextpage.html"><button class="nav-button">Next ⏩</button></a>
+  </div>
+
 </body>
 </html>
- 
