@@ -3,127 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stillness</title>
+  <title>Moment 2</title>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <style>
     body {
+      background-color: #f5f5dc;
       margin: 0;
       padding: 0;
-      background-color: #f5f5dc;
       font-family: 'Special Elite', cursive;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
     }
 
-    .container {
-      display: flex;
-      flex-direction: row;
-      max-width: 1000px;
+    .image-container {
       width: 100%;
-      margin: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-      overflow: hidden;
-      background-color: #fffaf0;
+      max-width: 600px;
+      margin-top: 2rem;
     }
 
-    .image-side {
-      flex: 1;
-    }
-
-    .image-side img {
+    .image-container img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     }
 
-    .poem-side {
-      flex: 1;
-      padding: 2rem;
+    .text-container {
+      max-width: 600px;
+      padding: 1.2rem;
+      text-align: center;
       color: maroon;
-      font-size: 1.3rem;
-      line-height: 1.8;
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
     }
 
     .nav-button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
       background-color: maroon;
       color: white;
       border: none;
       border-radius: 14px;
-      padding: 0.5rem 1.2rem;
-      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
       font-family: 'Special Elite', cursive;
       cursor: pointer;
+      margin: 0.5rem;
       transition: background-color 0.3s;
-      text-decoration: none;
     }
 
     .nav-button:hover {
       background-color: #4b1c1c;
     }
 
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .image-side, .poem-side {
-        width: 100%;
-        height: auto;
-      }
+    .button-container {
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <a href="moment.html" class="nav-button">⏪ Back</a>
+  <div class="image-container">
+    <img src="images/moment2.jpg" alt="Another Special Moment" />
+  </div>
 
-  <div class="container">
-    <div class="image-side">
-      <img src="images/stillness.jpg" alt="Quiet Moment Image" />
-    </div>
-    <div class="poem-side">
-      you waited,<br>
-      at the metro gate,<br>
-      while the day still clung to my shoulders.<br>
-      my office hours dragged,<br>
-      but you —<br>
-      you showed up like the part of the day I’d been waiting for.<br><br>
+  <div class="text-container">
+    We stood under the neon sign like it was our only sun.<br>
+    The world buzzed behind us, but I only heard your laugh.<br>
+    You looked at me like the city was ours to steal.<br>
+    We didn’t need a map, we followed the music in our bones.<br><br>
 
-      we talked —<br>
-      well, I talked,<br>
-      about deadlines and dumb people<br>
-      and why I hate my chair at work.<br>
-      and you just listened.<br>
-      not out of obligation —<br>
-      but like you actually cared.<br>
-      like you liked the way i existed.<br><br>
+    Chaos all around.<br>
+    But we — we made quiet.
+  </div>
 
-      and then the auto —<br>
-      how it hummed like a lullaby<br>
-      while I melted<br>
-      into your lap<br>
-      like sleep had found its favorite place.<br>
-      you held me<br>
-      like something fragile,<br>
-      kissed my forehead<br><br>
-
-      not bold, not dramatic —<br>
-      just a tiny, quiet thing.<br>
-      like a thought you couldn't hold in.<br><br>
-
-      no confessions,<br>
-      no perfect lines.<br>
-      just the sound of the city,<br>
-      your hand in mine,<br>
-      and the start of something<br>
-      we didn’t have words for yet.
-    </div>
+  <div class="button-container">
+    <a href="moment.html"><button class="nav-button">⏪ Back</button></a>
   </div>
 
 </body>
